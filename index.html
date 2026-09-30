@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adip Parvez Ahad | CSE Student Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dark: "#0b1120",
+            surface: "#111827",
+            accent: "#22c55e",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-dark text-slate-200 antialiased">
+  <!-- Navbar -->
+  <nav class="fixed top-0 z-50 w-full border-b border-slate-800/80 bg-dark/85 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <a href="#home" class="text-lg font-bold tracking-wide text-white">
+       Adip Parvez Ahad<span class="text-accent">.</span>
+      </a>
+
+      <div class="hidden items-center gap-7 text-sm font-medium md:flex">
+        <a href="#about" class="transition hover:text-accent">About</a>
+        <a href="#skills" class="transition hover:text-accent">Skills</a>
+        <a href="#projects" class="transition hover:text-accent">Projects</a>
+        <a href="#education" class="transition hover:text-accent">Education</a>
+        <a href="#contact" class="transition hover:text-accent">Contact</a>
+      </div>
+
+      <button id="menuButton" class="text-2xl text-white md:hidden" aria-label="Open menu">
+        ☰
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden border-t border-slate-800 bg-surface px-5 py-4 md:hidden">
+      <div class="flex flex-col gap-4 text-sm">
+        <a href="#about" class="mobile-link hover:text-accent">About</a>
+        <a href="#skills" class="mobile-link hover:text-accent">Skills</a>
+        <a href="#projects" class="mobile-link hover:text-accent">Projects</a>
+        <a href="#education" class="mobile-link hover:text-accent">Education</a>
+        <a href="#contact" class="mobile-link hover:text-accent">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="relative flex min-h-screen items-center overflow-hidden px-5 pt-20">
+      <div class="absolute -left-24 top-32 h-72 w-72 rounded-full bg-green-500/10 blur-3xl"></div>
+      <div class="absolute -right-24 bottom-20 h-80 w-80 rounded-full bg-blue-500/10 blur-3xl"></div>
+
+      <div class="relative mx-auto grid w-full max-w-6xl gap-12 md:grid-cols-[1.4fr_0.6fr] md:items-center">
+        <div>
+          <p class="mb-4 font-medium text-accent">Hello, I am</p>
+          <h1 class="mb-5 text-4xl font-extrabold leading-tight text-white sm:text-6xl">
+           Adip Parvez Ahad
+          </h1>
+          <h2 class="mb-6 text-xl font-semibold text-slate-400 sm:text-2xl">
+            CSE Student at MBSTU
+          </h2>
+          <p class="max-w-2xl text-base leading-8 text-slate-400">
+            I am interested in C programming, programming fundamentals, electronics,
+            electrical engineering concepts, technology, and gaming.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#projects" class="rounded-lg bg-accent px-6 py-3 font-semibold text-slate-950 transition hover:-translate-y-1 hover:bg-green-400">
+              View Projects
+            </a>
+            <a href="#contact" class="rounded-lg border border-slate-600 px-6 py-3 font-semibold text-white transition hover:border-accent hover:text-accent">
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="mx-auto flex h-64 w-64 items-center justify-center rounded-3xl border border-slate-700 bg-surface shadow-2xl shadow-green-950/30 sm:h-72 sm:w-72">
+          <!-- Replace this area with your photo later if you want -->
+          <div class="text-center">
+            <div class="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-accent/15 text-5xl">👨‍💻</div>
+            <p class="font-semibold text-white">Adip Parvez Ahad</p>
+            <p class="mt-1 text-sm text-slate-400">CSE Student</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="border-y border-slate-800 bg-surface/50 px-5 py-20">
+      <div class="mx-auto max-w-6xl">
+        <p class="mb-2 text-sm font-bold uppercase tracking-widest text-accent">About Me</p>
+        <h2 class="mb-8 text-3xl font-bold text-white">Academic Journey</h2>
+
+        <div class="grid gap-8 md:grid-cols-2">
+          <div class="rounded-2xl border border-slate-800 bg-surface p-7">
+            <h3 class="mb-4 text-xl font-bold text-white">Computer Science & Engineering</h3>
+            <p class="leading-7 text-slate-400">
+              I am a Computer Science and Engineering student at Mawlana Bhashani
+              Science and Technology University (MBSTU). I am building a strong
+              foundation in programming and computer science concepts.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-800 bg-surface p-7">
+            <h3 class="mb-4 text-xl font-bold text-white">My Interests</h3>
+            <p class="leading-7 text-slate-400">
+              I enjoy exploring C programming, problem-solving, core programming
+              concepts, basic circuits, electronics, electrical engineering topics,
+              modern technology, and gaming.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="px-5 py-20">
+      <div class="mx-auto max-w-6xl">
+        <p class="mb-2 text-sm font-bold uppercase tracking-widest text-accent">What I Am Learning</p>
+        <h2 class="mb-10 text-3xl font-bold text-white">Skills & Interests</h2>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="group rounded-2xl border border-slate-800 bg-surface p-6 transition duration-300 hover:-translate-y-2 hover:border-accent/60">
+            <div class="mb-4 text-3xl">C</div>
+            <h3 class="mb-2 text-lg font-bold text-white">C Programming</h3>
+            <p class="text-sm leading-6 text-slate-400">Learning syntax, logic, functions, arrays, pointers, and problem-solving.</p>
+          </article>
+
+          <article class="group rounded-2xl border border-slate-800 bg-surface p-6 transition duration-300 hover:-translate-y-2 hover:border-accent/60">
+            <div class="mb-4 text-3xl">⌘</div>
+            <h3 class="mb-2 text-lg font-bold text-white">Web Basics</h3>
+            <p class="text-sm leading-6 text-slate-400">Building simple responsive pages with HTML and Tailwind CSS.</p>
+          </article>
+
+          <article class="group rounded-2xl border border-slate-800 bg-surface p-6 transition duration-300 hover:-translate-y-2 hover:border-accent/60">
+            <div class="mb-4 text-3xl">🧠</div>
+            <h3 class="mb-2 text-lg font-bold text-white">Programming Fundamentals</h3>
+            <p class="text-sm leading-6 text-slate-400">Practicing algorithms, logical thinking, debugging, and clean code.</p>
+          </article>
+
+          <article class="group rounded-2xl border border-slate-800 bg-surface p-6 transition duration-300 hover:-translate-y-2 hover:border-accent/60">
+            <div class="mb-4 text-3xl">⚡</div>
+            <h3 class="mb-2 text-lg font-bold text-white">Basic Electronics</h3>
+            <p class="text-sm leading-6 text-slate-400">Interested in circuits, electrical concepts, and how technology works.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="border-y border-slate-800 bg-surface/50 px-5 py-20">
+      <div class="mx-auto max-w-6xl">
+        <p class="mb-2 text-sm font-bold uppercase tracking-widest text-accent">My Work</p>
+        <h2 class="mb-3 text-3xl font-bold text-white">Projects</h2>
+        <p class="mb-10 text-slate-400">Replace these cards with your real projects as you build them.</p>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="overflow-hidden rounded-2xl border border-slate-800 bg-surface transition hover:border-accent/60">
+            <div class="flex h-40 items-center justify-center bg-gradient-to-br from-green-500/20 to-emerald-900/20 text-5xl">💻</div>
+            <div class="p-6">
+              <h3 class="mb-3 text-xl font-bold text-white">[C Project Name]</h3>
+              <p class="mb-5 text-sm leading-6 text-slate-400">Add a short description of a C program you create.</p>
+              <span class="text-sm font-semibold text-accent">C Programming</span>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-2xl border border-slate-800 bg-surface transition hover:border-accent/60">
+            <div class="flex h-40 items-center justify-center bg-gradient-to-br from-blue-500/20 to-indigo-900/20 text-5xl">🌐</div>
+            <div class="p-6">
+              <h3 class="mb-3 text-xl font-bold text-white">[Website Project]</h3>
+              <p class="mb-5 text-sm leading-6 text-slate-400">Add a short description of a website or portfolio page.</p>
+              <span class="text-sm font-semibold text-accent">HTML / Tailwind CSS</span>
+            </div>
+          </article>
+
+          <article class="overflow-hidden rounded-2xl border border-slate-800 bg-surface transition hover:border-accent/60">
+            <div class="flex h-40 items-center justify-center bg-gradient-to-br from-yellow-500/20 to-orange-900/20 text-5xl">⚙️</div>
+            <div class="p-6">
+              <h3 class="mb-3 text-xl font-bold text-white">[Electronics Project]</h3>
+              <p class="mb-5 text-sm leading-6 text-slate-400">Add a short description of a circuit, experiment, or idea.</p>
+              <span class="text-sm font-semibold text-accent">Electronics</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="px-5 py-20">
+      <div class="mx-auto max-w-6xl">
+        <p class="mb-2 text-sm font-bold uppercase tracking-widest text-accent">Education</p>
+        <h2 class="mb-10 text-3xl font-bold text-white">Academic Background</h2>
+
+        <div class="border-l-2 border-accent pl-6">
+          <p class="mb-2 text-sm font-semibold text-accent">Current</p>
+          <h3 class="text-xl font-bold text-white">Bachelor of Science in Computer Science & Engineering</h3>
+          <p class="mt-2 text-slate-400">Mawlana Bhashani Science and Technology University (MBSTU)</p>
+          <p class="mt-3 text-sm text-slate-500">[Add your department, academic year, or expected graduation year here if you wish.]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="border-t border-slate-800 bg-surface/50 px-5 py-20">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="mb-2 text-sm font-bold uppercase tracking-widest text-accent">Get In Touch</p>
+        <h2 class="mb-4 text-3xl font-bold text-white">Let’s Connect</h2>
+        <p class="mx-auto mb-8 max-w-xl leading-7 text-slate-400">
+          Feel free to reach out for conversations about programming, technology,
+          electronics, or gaming.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="mailto:[Your Email]" class="rounded-lg bg-accent px-6 py-3 font-semibold text-slate-950 transition hover:-translate-y-1 hover:bg-green-400">
+            [Your Email]
+          </a>
+          <a href="[GitHub URL]" target="_blank" class="rounded-lg border border-slate-600 px-6 py-3 font-semibold text-white transition hover:border-accent hover:text-accent">
+            GitHub
+          </a>
+          <a href="[LinkedIn URL]" target="_blank" class="rounded-lg border border-slate-600 px-6 py-3 font-semibold text-white transition hover:border-accent hover:text-accent">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 px-5 py-6 text-center text-sm text-slate-500">
+    © <span id="year"></span> Adip Parvez Ahad. Built with HTML and Tailwind CSS.
+  </footer>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const mobileLinks = document.querySelectorAll(".mobile-link");
+
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      menuButton.textContent = mobileMenu.classList.contains("hidden") ? "☰" : "✕";
+    });
+
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuButton.textContent = "☰";
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
